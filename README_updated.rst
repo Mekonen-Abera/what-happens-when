@@ -1,4 +1,4 @@
-What happens when...
+What happens when you type google.com in your browser and press Enter
 ====================
 
 This repository is an attempt to answer the age-old interview question "What
@@ -14,10 +14,6 @@ request, please!
 
 This is all licensed under the terms of the `Creative Commons Zero`_ license.
 
-Read this in `简体中文`_ (simplified Chinese), `日本語`_ (Japanese), `한국어`_
-(Korean) and `Spanish`_. NOTE: these have not been reviewed by the alex/what-happens-when
-maintainers.
-
 Table of Contents
 ====================
 
@@ -27,6 +23,38 @@ Table of Contents
 
 The "g" key is pressed
 ----------------------
+For many internet users, the act of typing https://www.google.com into their browser and hitting enter is a familiar ritual. 
+But have you ever paused to consider what happens behind the scenes, beyond the simple act of pressing a key? 
+Let’s unravel the complexities of this process, shedding light on the intricate workings of the web.
+
+Before diving into the technical details, let’s establish a common understanding. 
+If you’re unfamiliar, a browser is the software application that enables you to access and interact with the internet. 
+Examples include Google Chrome, Firefox, Safari, and others.
+
+When you enter a URL like https://www.google.com into your browser’s address bar and hit enter, 
+a flurry of actions ensues before any visible output appears on your screen. 
+Despite happening almost instantaneously, these actions are crucial for retrieving the desired webpage. 
+Before delving into the specifics, let’s provide a succinct overview of what unfolds in those milliseconds.
+
+Your journey begins with the URL input into the browser, triggering a sequence of events that navigate the vast infrastructure of the internet. 
+From contacting DNS servers to establishing connections and conducting security checks, 
+each step plays a pivotal role in delivering the requested webpage to your screen. 
+Let’s embark on a journey to demystify the process and gain a deeper understanding of how the web operates.
+
+Once you type https://www.google.com into your browser and hit enter, your computer initiates a request to the Domain Name System (DNS) server. 
+The DNS server acts as a directory, mapping domain names to their corresponding IP addresses. 
+It returns the precise IP address associated with https://www.google.com.
+
+With this IP address in hand, your computer establishes a connection with the server using TCP (Transmission Control Protocol) over IP (Internet Protocol). 
+This process, often referred to as a "handshake," ensures a reliable and stable connection between your computer and the server.
+
+If your computer is protected by a firewall, it verifies the legitimacy of the request before granting access. 
+Similarly, if the server you’re trying to access is behind a firewall, it performs a similar authentication process before allowing the connection to proceed. 
+These firewall checks ensure that only authorized requests are granted access to the server, enhancing security and preventing unauthorized access.
+
+After establishing the connection, your browser sends a request for the webpage, utilizing a security protocol such as SSL 
+(Secure Sockets Layer) or its successor, TLS (Transport Layer Security). These protocols encrypt the data exchange…
+
 The following sections explain the physical keyboard actions
 and the OS interrupts. When you press the key "g" the browser receives the
 event and the auto-complete functions kick in.
